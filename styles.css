@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+h4 {
+  color: darkblue;
+  margin: 0;
+}
+.major-section {
+  margin-bottom: 20px;
+}
+.photo {
+  display: flex;
+  align-items: center;
+}
+img {
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px grey;
+  width: 200px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.name-and-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-info {
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: left;
+  background: linear-gradient(30deg, rgba(123, 123, 123, 0.6), transparent);
+  padding: 10px;
+}
