@@ -8,6 +8,7 @@ body {
 }
 
 h1 {
+  font-size: x-large;
   margin: 0;
 }
 
@@ -29,15 +30,6 @@ p {
   margin-top: 0;
   margin-bottom: 10px;
 }
-/* 
-.content {
-  width: 100%;
-  padding: 20mm;
-  box-sizing: border-box;
-  background-color: lightblue;
-  border: 1px solid red;
-  margin: 20px ;
-} */
 
 .a4-page {
   width: 210mm;
@@ -55,6 +47,7 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .photo {
@@ -63,7 +56,7 @@ p {
 
 img {
   border-radius: 10px;
-  box-shadow: 5px 5px 5px grey;
+  /* box-shadow: 5px 5px 5px grey; */
   width: 150px;
   height: auto;
 }
@@ -72,15 +65,15 @@ img {
   width: auto;
   flex-direction: column;
   text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
+  /* margin-left: 5%; */
+  /* margin-right: 5%; */
 }
 .contact-info {
   width: auto;
   border-radius: 10px;
   flex-direction: column;
   background: linear-gradient(340deg, lightgrey, transparent);
-  box-shadow: 5px 5px 5px lightgrey;
+  /* box-shadow: 5px 5px 5px lightgrey; */
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
@@ -107,28 +100,41 @@ img {
 }
 
 .left-top {
-  width: 80%;
+  width: 70%;
   float: left;
+  background-color: lightseagreen;
+  margin-bottom: 100mm;
 }
 
 .right-top {
-  width: 15%;
+  width: 25%;
   float: right;
+  background-color: green;
+}
+.list-header {
+  text-align: center;
+}
+.skills-list, .abilities-list {
+  list-style-type: disc;
+  padding-left: 20px;
 }
 
 .left-bottom {
-  width: 80%;
+  width: 70%;
   float: left;
+  background-color: lightseagreen;
+  margin-bottom: 15mm;
 }
 .right-bottom {
-  width: 15%;
+  width: 25%;
   float: right;
+  background-color: green;
 }
 
 footer {
   clear: both;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   text-align: center;
   font-size: small;
-  color: red;
+  color: grey;
 }
