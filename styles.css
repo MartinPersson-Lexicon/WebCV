@@ -1,39 +1,134 @@
+@page {
+  size: A4 portrait;
+  margin: 20mm 15mm 20mm 15mm;
+}
+
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
 }
-h4 {
-  color: darkblue;
+
+h1 {
   margin: 0;
 }
-.major-section {
-  margin-bottom: 20px;
+
+h2 {
+  color: darkblue;
+  margin: 10;
 }
-.photo {
-  display: flex;
-  align-items: center;
+h3 {
+  margin: 0;
 }
-img {
+
+h4 {
+  color: darkblue;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: medium;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+/* 
+.content {
+  width: 100%;
+  padding: 20mm;
+  box-sizing: border-box;
+  background-color: lightblue;
+  border: 1px solid red;
+  margin: 20px ;
+} */
+
+.a4-page {
+  width: 210mm;
+  height: 297mm;
+  box-sizing: border-box;
   border-radius: 10px;
-  box-shadow: 10px 10px 5px grey;
-  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  page-break-after: always;
+  background-color: lightblue;
 }
 
 .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.name-and-title {
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
+
+.photo {
+  align-self: center;
+}
+
+img {
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px grey;
+  width: 150px;
+  height: auto;
+}
+
+.name-and-title {
+  width: auto;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
 .contact-info {
-  display: flex;
+  width: auto;
   border-radius: 10px;
   flex-direction: column;
-  align-items: left;
-  background: linear-gradient(30deg, rgba(123, 123, 123, 0.6), transparent);
-  padding: 10px;
+  background: linear-gradient(340deg, lightgrey, transparent);
+  box-shadow: 5px 5px 5px lightgrey;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.profile,
+.emplioyments,
+.educations {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.employer {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.date {
+  font-style: italic;
+  color: dimgray;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.left-top {
+  width: 80%;
+  float: left;
+}
+
+.right-top {
+  width: 15%;
+  float: right;
+}
+
+.left-bottom {
+  width: 80%;
+  float: left;
+}
+.right-bottom {
+  width: 15%;
+  float: right;
+}
+
+footer {
+  clear: both;
+  margin-bottom:10px;
+  text-align: center;
+  font-size: small;
+  color: red;
 }
